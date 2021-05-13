@@ -1,15 +1,17 @@
 {
-  "name": "deriv-besquare",
+  "homepage": "https://seanho96.github.io/git-and-github-intro/",
+  "name": "git-and-github-intro",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sh .very_secret_folder/scripts/build.sh",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
-  "author": "Aaron Imming",
+  "author": "Sean Ho",
   "license": "ISC",
   "dependencies": {
     "@actions/core": "^1.2.6",
