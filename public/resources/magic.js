@@ -21,23 +21,25 @@ const Teams = () => {
   }
 
   return (
-    <div className="teams">
-      {teams.map((team, idx) => (
-        <div key={idx} className="teams__team">
-          <h1 className="teams__team-header">Team {idx + 1}</h1>
-          {team.map((person) => (
-            <div key={person} className="teams__person">
-              <a
-                href={`https://github.com/${person}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {person}
-              </a>
-            </div>
-          ))}
-        </div>
-      ))}
+    <div className="container">
+      <div className="teams">
+        {teams.map((team, idx) => (
+          <div key={idx} className="teams__team">
+            <h1 className="teams__team-header">Team {idx + 1}</h1>
+            {team.map((person) => (
+              <div key={person} className="teams__person">
+                <a
+                  href={`https://github.com/${person}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {person}
+                </a>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

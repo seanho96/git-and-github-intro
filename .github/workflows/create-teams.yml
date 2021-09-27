@@ -15,8 +15,8 @@ jobs:
         id: create_teams
         uses: ./.github/actions/create-teams
         with:
-          team_size: 5
-          total_people: 50
+          team_size: 7
+          total_people: 49
       - name: Merge updated teams to main
         run: |
           if [ -n "$(git status --porcelain)" ]; then
